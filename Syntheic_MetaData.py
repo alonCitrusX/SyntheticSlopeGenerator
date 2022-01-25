@@ -16,11 +16,12 @@ class Segment:
 class Type(Enum):
     BINARY = 1
     CONTINUOUS = 2
+    CATEGORICAL = 3
 
 
 @dataclass
 class MetaData:
     d: int
     segments: List[Segment]  # find how to define the boundaries
+    type: Enum
     noise: int = 0
-    type = Enum
