@@ -21,6 +21,6 @@ class Type(Enum):
 @dataclass
 class MetaData:
     d: int
-    segments: List[Segment(d ,0 ,0 ,0 ,0)] #find how to define the boundaries
+    segments: List[Segment]  # find how to define the boundaries
     noise: int = 0
     type = Enum
